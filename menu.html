@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 12px;
+      background: #faf8ff;
+      font-family: 'Chonburi', serif;
+    }
+
+    aside {
+      width: 100%;
+      min-width: 0;
+      padding: 18px 14px;
+      border: 1px solid #e8ddff;
+      background: linear-gradient(160deg, #fff 0%, #f8f4ff 100%);
+      box-shadow: 0 8px 24px rgba(91, 61, 150, 0.1);
+    }
+
+    .menuHeading {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 14px;
+      color: #b092ff;
+      font-family: 'Chonburi', Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .menuHeading::after {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, #b092ff 0%, #e8ddff 75%, transparent 100%);
+      content: "";
+    }
+
+    .navMenu {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 5px;
+      width: 100%;
+      min-width: 0;
+    }
+
+    .navMenu a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-width: 0;
+      min-height: 42px;
+      padding: 9px 12px;
+      border: 1px solid #eee8f8;
+      color: #4a405e;
+      background: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color .42s ease, border-color .42s ease, color .42s ease, box-shadow .42s ease, transform .42s ease;
+    }
+
+    .navMenu a:hover,
+    .navMenu a:focus-visible {
+      color: #fff;
+      border-color: #d3c2ff;
+      background: linear-gradient(110deg, #a683ffca, #b192ff);
+      box-shadow: 0 0 0 2px rgba(176, 146, 255, 0.5), 0 0 18px rgba(176, 146, 255, 0.85), 0 0 32px rgba(142, 109, 224, 0.55);
+      transform: translateX(.5px);
+    }
+
+    .navMenu a:focus-visible {
+      outline: 2px solid #8e6de0;
+      outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .navMenu a { transition: none; }
+      .navMenu a:hover,
+      .navMenu a:focus-visible { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <aside aria-label="Navegação">
+    <h1 class="menuHeading">Menu</h1>
+    <nav class="navMenu" aria-label="Menu">
+    <a href="https://app.notion.com/p/med26/dashboard-5586f65f7fbd83f7993281eaa1b4c8b0?source=copy_link" target="_blank" rel="noopener noreferrer">Dashboard</a>
+    <a href="https://app.notion.com/p/med26/dashboard-5586f65f7fbd83f7993281eaa1b4c8b0?source=copy_link#4086f65f7fbd80618c92fd7b37c2c553" target="_blank" rel="noopener noreferrer">Notas</a>
+    <a href="https://app.notion.com/p/med26/dashboard-5586f65f7fbd83f7993281eaa1b4c8b0?source=copy_link#4086f65f7fbd8072b2d3da6ff36f882f" target="_blank" rel="noopener noreferrer">Projetos</a>
+    <a href="https://app.notion.com/p/med26/dashboard-5586f65f7fbd83f7993281eaa1b4c8b0?source=copy_link#4086f65f7fbd80fdb911ec5abfb78b28" target="_blank" rel="noopener noreferrer">Áreas</a>
+    <a href="https://app.notion.com/p/med26/dashboard-5586f65f7fbd83f7993281eaa1b4c8b0?source=copy_link#4086f65f7fbd80ca88a3c450343f5499" target="_blank" rel="noopener noreferrer">Recursos</a>
+    <a href="https://app.notion.com/p/med26/dashboard-5586f65f7fbd83f7993281eaa1b4c8b0?source=copy_link#4086f65f7fbd80c88e5ce0dcb6e07fe2" target="_blank" rel="noopener noreferrer">Arquivos</a>
+    <a href="https://app.notion.com/p/med26/dashboard-5586f65f7fbd83f7993281eaa1b4c8b0?source=copy_link#4086f65f7fbd8072a26bda3309c7c785" target="_blank" rel="noopener noreferrer">Agenda</a>
+    </nav>
+  </aside>
+</body>
+</html>
